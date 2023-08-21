@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NopCommerce - User">
+
+<listeners>
+<!--  <listener class-name="commons.MethodListener"> </listener>-->
+<!--  <listener class-name="reportConfig.ReportNGListener"> </listener>-->
+<!--  <listener class-name="reportConfig.ExtentTestListener"> </listener>-->
+<!--  <listener class-name="reportConfig.AllureTestListener"> </listener>-->
+<!--  <listener class-name="org.uncommons.reportng.HTMLReporter"> </listener>-->
+<!--  <listener class-name="org.uncommons.reportng.JUnitXMLReporter"> </listener>-->
+</listeners> 
+
+  <parameter name="url" value="https://demo.guru99.com/v4/"></parameter>
+   
+   <test name="Run on FIREFOX">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.bankguru.N1_Create_New_Customer"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

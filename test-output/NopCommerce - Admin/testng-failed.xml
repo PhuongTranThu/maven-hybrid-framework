@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NopCommerce - Admin]">
+  <parameter name="url" value="https://demo.nopcommerce.com/"/>
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Run on FIREFOX(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.nopcommerce.user.Level_20_1_Manager_Data_Json">
+        <methods>
+          <include name="User_02_Login"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="User_01_Register"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- com.nopcommerce.user.Level_20_1_Manager_Data_Json -->
+    </classes>
+  </test> <!-- Run on FIREFOX(failed) -->
+</suite> <!-- Failed suite [NopCommerce - Admin] -->

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="WordPress - Admin">
+
+<listeners>
+  <listener class-name="commons.MethodListener"> </listener>
+  <listener class-name="reportConfig.AllureTestListener"> </listener>
+</listeners> 
+
+  <parameter name="urlAdmin" value="http://phuongtest.com/wp-admin/"></parameter>
+  <parameter name="urlUser" value="http://phuongtest.com//"></parameter>
+
+   <test name="Run on FIREFOX">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.wordpress.admin.Post_01_Create_Read_Update_Delete_Update_Search"/>
+    </classes>
+    
+<!--    <packages>-->
+<!--    <package name="com.wordpress.admin" />-->
+<!--    </packages>-->
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->	

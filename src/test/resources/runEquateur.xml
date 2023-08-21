@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Equateur">
+
+<listeners>
+<listener class-name="commons.MethodListener"> </listener>
+<listener class-name="org.uncommons.reportng.HTMLReporter"> </listener>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"> </listener>
+</listeners> 
+
+  <parameter name="url" value="https://equateur-warehouse.staging.bfast-vn.net/gestion-de-stock/stock"></parameter>
+   
+   <test name="Run on Chrome">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="com.equateur.Post_01_Create_Reference_Attendus"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

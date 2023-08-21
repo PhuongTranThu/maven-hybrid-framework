@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-05T02:19:10Z" name="NopCommerce - Admin" finished-at="2023-08-05T02:19:36Z" duration-ms="25569">
+    <groups>
+    </groups>
+    <test started-at="2023-08-05T02:19:10Z" name="Run on CHROME" finished-at="2023-08-05T02:19:36Z" duration-ms="25569">
+      <class name="com.nopcommerce.user.Level_20_1_Manager_Data_Json">
+        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.nopcommerce.user.Level_20_1_Manager_Data_Json@48535004]" started-at="2023-08-05T02:19:10Z" name="initBeforeSuite" finished-at="2023-08-05T02:19:10Z" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBeforeSuite -->
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_20_1_Manager_Data_Json@48535004]" started-at="2023-08-05T02:19:10Z" name="beforeClass" finished-at="2023-08-05T02:19:23Z" duration-ms="12920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://demo.nopcommerce.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_20_1_Manager_Data_Json@48535004]" started-at="2023-08-05T02:19:23Z" name="User_01_Register" finished-at="2023-08-05T02:19:32Z" duration-ms="8760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_01_Register -->
+        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_20_1_Manager_Data_Json@48535004]" started-at="2023-08-05T02:19:32Z" name="User_02_Login" finished-at="2023-08-05T02:19:36Z" duration-ms="3830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_02_Login -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_20_1_Manager_Data_Json@48535004]" started-at="2023-08-05T02:19:36Z" name="afterClass" finished-at="2023-08-05T02:19:36Z" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.lang.Runtime.exec(Runtime.java:406)
+at java.base/java.lang.Runtime.exec(Runtime.java:310)
+at commons.BaseTest.closeBrowserDriver(BaseTest.java:227)
+at com.nopcommerce.user.Level_20_1_Manager_Data_Json.afterClass(Level_20_1_Manager_Data_Json.java:93)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.user.Level_20_1_Manager_Data_Json -->
+    </test> <!-- Run on CHROME -->
+  </suite> <!-- NopCommerce - Admin -->
+</testng-results>

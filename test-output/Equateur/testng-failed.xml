@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Equateur]">
+  <parameter name="url" value="https://equateur-warehouse.staging.bfast-vn.net/gestion-de-stock/stock"/>
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Run on Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.equateur.Post_01_Create_Reference_Attendus">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="User_01_Create_Attendus"/>
+          <include name="afterClass"/>
+          <include name="initBeforeSuite"/>
+        </methods>
+      </class> <!-- com.equateur.Post_01_Create_Reference_Attendus -->
+    </classes>
+  </test> <!-- Run on Chrome(failed) -->
+</suite> <!-- Failed suite [Equateur] -->

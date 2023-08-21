@@ -1,0 +1,14 @@
+{ 
+        "firstName" : "Thao",
+		"lastName" : "Nguyen",
+		"emailAddress" : "fc",
+		"validPassword" : "123456",
+		"date" : "10",
+		"month" : "June",
+		"year" : "1988",
+		"Login": {
+				"userName" : "Thao",
+				"password" : "1234"
+		
+		}
+}
